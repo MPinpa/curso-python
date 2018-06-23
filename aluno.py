@@ -10,3 +10,8 @@ soma = nota1 + nota2
 media = soma / 2
 
 print ("O Aluno {} tem a media {}".format(aluno.title(), media))
+
+if media >= 7:
+    print ('Foi Aprovado')
+else:
+    print ("Foi Reprovado")
