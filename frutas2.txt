@@ -1,4 +1,8 @@
-1 - limao
-2 - maca
-3 - laranjajaca
-4 - jaca
+limao - 1
+maca - 2
+laranjajaca - 3
+jac - 4
+limao-1
+maca-2
+laranjajaca-3
+jaca
