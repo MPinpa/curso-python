@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
-while(True):
+with open('loop.txt', 'a') as arquivo:
 
-    entrada = input("Digite nomes no arquivo: ")
+    while True:
 
-    if entrada.lower() == 'sair':
-        break
-    else:
-        with open('loop.txt', 'a') as arquivo:
-            arquivo.write("{}\n".format(entrada))
+        entrada = input("Digite nomes no arquivo: ")
+
+        if entrada.strip().lower() == 'sair':
+            break
+         arquivo.write("{}\n".format(entrada))
