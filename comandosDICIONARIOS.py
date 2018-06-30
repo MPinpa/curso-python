@@ -8,4 +8,4 @@ pessoa.values() # retorna os valores
 
 pessoa.items() # retorna uma lista com tuplas indicando chave e valor
 
-pessoa.get('idade', 'nao achei') # busca idade, se nao encontrar, apresenta nao achei
+pessoa.get('idade', 'nao achei') # busca idade no dicionario, se nao encontrar, apresenta nao achei
