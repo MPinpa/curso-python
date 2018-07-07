@@ -20,3 +20,5 @@ alfabeto.remove(elementoaserremovido) # Remove primeiro encontrado da lista
 
 alfabeto.pop(posicaodoelemento) # Remove o elemento daquela posicao
 
+alfabeto.insert(0, conteudo) # insere um conteudo numa posicao especifica
+

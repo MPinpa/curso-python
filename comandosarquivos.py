@@ -48,5 +48,3 @@ arquivo.write("conteudo") # escreve no arquivo
 
 
 
-
-
