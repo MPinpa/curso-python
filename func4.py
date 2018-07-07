@@ -2,18 +2,21 @@
 
 from random import choice
 
+from func import manipular_arquivo
+
 lista = [
     lambda name : name.title(),
     lambda name : name.lower(),
-    lambda name : name.upper()
+    lambda name : name.upper(),
+    lambda name : name.replace('a', '@')
 ]
 
-with open('nomes.txt', 'r') as arquivo:
-    conteudo = arquivo.readlines()
+conteudo = manipular_arquivo('nomes.txt', 'r')
+
 
 nome = choice(conteudo)
 
 
 
 for itens in lista:
-    print (itens(nome.replace('\n', '')))
+    print (itens(nome), end='')

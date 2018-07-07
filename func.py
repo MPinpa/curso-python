@@ -10,7 +10,7 @@ def soma(x, y):
 def manipular_arquivo(nome, modo, conteudo=None):
     if modo == 'r':
         try:
-            with open(nome_do_arquivo, modo) as arquivo:
+            with open(nome, modo) as arquivo:
                 return arquivo.readlines()
         except Exception as e :
             return 'Falha ao ler o arquivo: {}'.format(e)
@@ -18,11 +18,11 @@ def manipular_arquivo(nome, modo, conteudo=None):
         try:
             with open(nome, modo) as arquivo:
                 arquivo.write('\n'+conteudo)
-                return True
+                return manipular_arquivo(nome, 'r')
         except Exception as e:
             return 'Falha ao escrever no arquivo: {}'.format(e) 
         
 
-print (manipular_arquivo('frutas.txt', 'a', 'eae'))
+
 
 
