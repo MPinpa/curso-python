@@ -5,6 +5,8 @@ try: # tente
 
 except <nome do error> as variavel: # excessao do erro
 
+finally # sempre executa
+
 #erros:
 
 # Se gerar qualquer erro diferente que solicitamos vai travar o codigo.
