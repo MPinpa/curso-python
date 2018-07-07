@@ -13,14 +13,14 @@ def manipular_arquivo(nome, modo, conteudo=None):
             with open(nome, modo) as arquivo:
                 return arquivo.readlines()
         except Exception as e :
-            return 'Falha ao ler o arquivo: {}'.format(e)
+            return manipular_arquivo('python.log', 'a', str(e))
     elif modo == 'a':
         try:
             with open(nome, modo) as arquivo:
                 arquivo.write('\n'+conteudo)
                 return manipular_arquivo(nome, 'r')
         except Exception as e:
-            return 'Falha ao escrever no arquivo: {}'.format(e) 
+            return manipular_arquivo('python.log', 'a', str(e))
         
 
 

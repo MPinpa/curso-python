@@ -3,3 +3,6 @@ lucas
 adriano
 jorge
 pedro
+Luis
+mestre
+certo
