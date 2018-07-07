@@ -17,3 +17,9 @@ return #retorna um valor a funcao
 global # pega dentro de fora da funcao e traz para dentro do escopo de funcao
 
 Variavel_ local # Se nao existe a variavel no escopo local a funcao vai procurar no escopo global
+
+def nome_da_funcao(*args) # quando nao sei quantos argumento irei receber crio funcao com *args( args e uma variavel )
+                          # assim recebendo uma tupla
+
+def nome_da_funcao(*kwargs) # quando nao sei quantos argumento irei receber crio funcao com **kwargs( kwargs e uma variavel )
+                          # assim recebendo um dicionario

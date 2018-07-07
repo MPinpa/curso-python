@@ -8,6 +8,8 @@ open("arquivo.txt", mododeabertura) # abri um arquivo
 
 # x = abre para criar, falha se nao existir
 
+# a = escreve na ultima linha
+
 arquivo.read() # ler o arquivo
 
 arquivo.close() # fecha o arquivo, se nao fechar corre o risco de perder o arquivo

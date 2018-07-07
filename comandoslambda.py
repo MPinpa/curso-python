@@ -1,0 +1,1 @@
+lambda variaveis: comandos # para funcoes rapidas entao so atribui uma variavel

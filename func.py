@@ -7,20 +7,22 @@ def soma(x, y):
 
     return x+y
 
-def ler_arquivo(nome_do_arquivo):
-
-    try:
-
-        with open(nome_do_arquivo, 'r') as arquivo:
-            return [arquivo.readlines().replace('\n', '') for linha in conteudo]
-
-    except Exception as e:
+def manipular_arquivo(nome, modo, conteudo=None):
+    if modo == 'r':
+        try:
+            with open(nome_do_arquivo, modo) as arquivo:
+                return arquivo.readlines()
+        except Exception as e :
+            return 'Falha ao ler o arquivo: {}'.format(e)
+    elif modo == 'a':
+        try:
+            with open(nome, modo) as arquivo:
+                arquivo.write('\n'+conteudo)
+                return True
+        except Exception as e:
+            return 'Falha ao escrever no arquivo: {}'.format(e) 
         
-        return "Falha ao ler o arquivo: {}".format(e)
 
-conteudo = ler_arquivo('frutas.txt')
-
-for linha in conteudo:
-    print (linha)
+print (manipular_arquivo('frutas.txt', 'a', 'eae'))
 
 
