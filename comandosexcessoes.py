@@ -7,6 +7,8 @@ except <nome do error> as variavel: # excessao do erro
 
 finally # sempre executa
 
+raise <nome do erro> # Cria porprio erro e podemos utilizar o except para tratar 
+
 #erros:
 
 # Se gerar qualquer erro diferente que solicitamos vai travar o codigo.
