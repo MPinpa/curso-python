@@ -32,3 +32,7 @@ class pessoa(mulher): # Classe filha
 
 super().__init__(nome, idade, endereco) # Traz todos os atributos da classe Pai
 
+dir() # mostra todos os metodos da classe
+
+self.metodo # utilizando isso nao precisa se preocupar com ordenacao dos metodos na classe
+

@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
-from car import car
+from car import Car, Carro_eletrico
 
-car1 = Car('i320', 'BHW', 2017)
+teste = Carro_eletrico('Prius', 'Toyota', 2018)
 
-print 
+print (teste.combustivel)
+print (teste.velocidadekm)
+
