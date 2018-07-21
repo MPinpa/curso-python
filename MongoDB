@@ -1,0 +1,41 @@
+not only SQL
+
+Collections = Tabelas
+
+Documentos = Json
+
+@ Cuidados para nao duplicar
+
+Porta : 27017
+ 
+------------------------------------
+mongodb.com = curso
+------------------------------------
+
+Comandos:
+
+
+show dbs = mostra todos os bancos
+
+show tables = mostra todas as tabelas
+
+use <nomedabase> = entra no banco, caso nao exista ele cria.
+
+.insert() # inserir Documentos
+
+.remove() # remover Documentos , cuidado usar campos unicos, porque se tiver 2 linhas com nomes parecidos ele 
+                                 exclui os dois
+
+.update({}, {}) # atualizar Documentos. primeiro parametro de busca e segundo pelo que voce vai trocar, porem ele apaga tudo.
+
+.update({}, {"$set":{}) # mantem as informacoes e altera somente o neessario.
+
+.find() # buscar documentos
+
+.pretty() # saida bonita igual pprint
+
+pymongo # pacote de python para acesso no banco
+
+
+
+
