@@ -1,0 +1,20 @@
+Banco de dados Relacional : SQL
+
+porta: 5432
+
+
+\dt : lista as databases
+
+\d ; detalhes da tabela
+
+
+
+
+where between <> and <>  ; procura entre os numeros indicado por <>
+
+
+======================================================================
+
+No python :
+
+.fet
